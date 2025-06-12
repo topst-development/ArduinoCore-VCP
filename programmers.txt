@@ -1,0 +1,8 @@
+vcptool.name=VCP FWDN
+vcptool.communication=serial
+vcptool.protocol=serial
+vcptool.program.protocol=serial
+vcptool.program.tool=fwdn
+vcptool.program.tool.default=fwdn
+vcptool.program.extra_params=
+vcptool.extra_params=
