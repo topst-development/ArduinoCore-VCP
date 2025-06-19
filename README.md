@@ -31,7 +31,7 @@ To program the TOPST VCP-G board, you need to add the TOPST VCP-G .json file to 
 2. Navigate to **File > Preferences**.
 3. In the **"Additional Board Manager URLs"** field, add the following URL:
     ```
-    https://raw.githubusercontent.com/topst-development/topst-vcp-board-manager/feature/moving/package_topst_vcp_index.json
+    https://raw.githubusercontent.com/topst-development/VCP-Arduino_Board_Manager/main/package_topst_vcp_index.json
     ```
 4. Click **OK** button to save your changes.
 5. Go to **Tools > Board > Boards Manager.**
