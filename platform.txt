@@ -109,8 +109,8 @@ recipe.objcopy.bin.pattern="{compiler.path}{compiler.objcopy.cmd}" {compiler.elf
 recipe.objcopy.hex.pattern="{compiler.path}{compiler.objcopy.cmd}" {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}.hex"
 
 ## convert file to telechips VCP preferred_out_format
-recipe.hooks.objcopy.postobjcopy.1.pattern.windows="{runtime.tools.vcp-tools.path}/tcmk-convert.exe" "{build.path}/{build.project_name}.bin" "{build.path}/{build.project_name}.rom"
-recipe.hooks.objcopy.postobjcopy.1.pattern.linux="python3" "{runtime.tools.vcp-tools.path}/main.py" "{build.path}/{build.project_name}.bin" "{build.path}/{build.project_name}.rom"
+recipe.hooks.objcopy.postobjcopy.1.pattern.windows="{runtime.tools.VCP-tools.path}/tcmk-convert.exe" "{build.path}/{build.project_name}.bin" "{build.path}/{build.project_name}.rom"
+recipe.hooks.objcopy.postobjcopy.1.pattern.linux="python3" "{runtime.tools.VCP-tools.path}/main.py" "{build.path}/{build.project_name}.bin" "{build.path}/{build.project_name}.rom"
 
 build.preferred_out_format=bin
 
@@ -125,7 +125,7 @@ recipe.size.regex.data=^(?:\.data|\.bss|\.noinit)\s+([0-9]+).*
 recipe.size.regex.eeprom=^(?:\.eeprom)\s+([0-9]+).*
 
 
-tools.fwdn.path={runtime.tools.vcp-tools.path}
+tools.fwdn.path={runtime.tools.VCP-tools.path}
 tools.fwdn.cmd.linux=fwdn
 tools.fwdn.cmd.windows=fwdn.exe
 
